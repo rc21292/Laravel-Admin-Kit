@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title','Users List')
 @section('content')
 @can('users_manage')
 <div class="container-fluid p-0">

@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title','Create User')
 @section('content')
 
 <div class="card">

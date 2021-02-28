@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title','Show Permission')
 @section('content')
     
 <div class="card">
