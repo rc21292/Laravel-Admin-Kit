@@ -11,6 +11,11 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
 	//Home Route
     Route::get('/home', 'HomeController@index')->name('home');
 
+    //Home Route
+    Route::get('/blank', function(){
+        return view('admin.blank');
+    });
+
     //Permission Route
     Route::resource('permissions', 'Admin\PermissionsController');
     Route::delete('permissions_mass_destroy', 'Admin\PermissionsController@massDestroy')->name('permissions.mass_destroy');

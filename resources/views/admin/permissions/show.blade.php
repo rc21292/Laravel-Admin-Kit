@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-
+    
 <div class="card">
     <div class="card-header">
         {{ trans('global.show') }} {{ trans('cruds.permission.title') }}

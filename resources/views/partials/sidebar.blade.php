@@ -15,6 +15,12 @@
 				</a>
 			</li>
 
+			<li class="sidebar-item active">
+				<a class="sidebar-link" href="{{url('admin/blank')}}">
+					<i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
+				</a>
+			</li>
+
 			@can('users_manage')
 			<li class="sidebar-item">
 				<a href="#auth" data-toggle="collapse" class="sidebar-link collapsed">
@@ -32,8 +38,8 @@
 		<div class="sidebar-cta">
 			<div class="sidebar-cta-content">
 				<a href="#" class="btn btn-primary btn-block" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
-                    {{ trans('global.logout') }}
-                </a>
+					{{ trans('global.logout') }}
+				</a>
 			</div>
 		</div>
 	</div>
